@@ -1,5 +1,5 @@
 # ANCustomButton
-ButtonWithArrangedImageAndTitle (both web image and assets are supported).
+Button With Arranged Image And Title (both web image and assets are supported).
 
 ## Usage
 (you can also see sample Xcode project in `/ANCustomButton_Demo`)
