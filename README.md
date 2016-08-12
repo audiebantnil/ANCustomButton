@@ -17,7 +17,7 @@ ButtonWithArrangedImageAndTitle (both web image and assets are supported).
     ...
     
     // use either frame or constraint
-    button4.frame = CGRectMake(200, 50, 120, 60);
+    button.frame = CGRectMake(200, 50, 120, 60);
 ```
 * Add created button to the view.
-* if you don't use `translatesAutoresizingMaskIntoConstraints`, then you should set button constraints.
+* If you don't use `translatesAutoresizingMaskIntoConstraints`, then you should set button constraints.
