@@ -4,20 +4,41 @@ Button With Arranged Image And Title (both web image and assets are supported).
 ## Usage
 (you can also see sample Xcode project in `/ANCustomButton_Demo`)
 * Add folder `ANCustomButton_Demo/ANCustomButton` to your project.
-* `#import “ANCustomButton.h”` to your view controller.
+* `#import “UIButton+CustomLayout.h”` to your view controller.
 * Create custom button method:
 ```
     // choose a type of ANButtonType
-    ANCustomButton *button = [ANCustomButton buttonWithType:ANButtonTypeImageTopTitleBottom andImageString:@"picture" andTitle:@"ButtonName" andFontSize:12];
+    UIButton *button1 = [UIButton buttonWithType:ANButtonTypeImageTopTitleBottom
+                                          margin:10
+                                       titleFont:[UIFont systemFontOfSize:16.0]
+                                     normalTitle:@"title111111"
+                                     normalImage:[UIImage imageNamed:@"best"]];
     
     // set other properties
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-    [button setImage:[UIImage imageNamed:@"arrow_more_selected"] forState:UIControlStateSelected];
-    [button addTarget:self action:@selector(didClickButton:) forControlEvents:UIControlEventTouchUpInside];
+    [button1 setTitleColor:[UIColor purpleColor] forState:UIControlStateNormal];
+    [button1 setTitleColor:[UIColor yellowColor] forState:UIControlStateSelected];
+    [button1 addTarget:self action:@selector(didClickButton:) forControlEvents:UIControlEventTouchUpInside];
     ...
     
-    // use either frame or constraint
-    button.frame = CGRectMake(200, 50, 120, 60);
+    // set button's "buttonFrameOrigin"
+    button1.buttonFrameOrigin = CGPointMake(20, 40);
+    
+    // add button to your view
+    [self.view addSubview:button1];
+    
+    // if you use "ANButtonTypeCustomRect", then you should set "imageRect" and "titleRect" like this
+    UIButton *button5 = [UIButton buttonWithType:ANButtonTypeCustomRect
+                                          margin:0
+                                       titleFont:[UIFont systemFontOfSize:20.0]
+                                     normalTitle:@"custom"
+                                     normalImage:[UIImage imageNamed:@"best"]];
+    [button5 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    button5.imageRect = CGRectMake(0, 0, 100, 60);
+    button5.titleRect = CGRectMake(18, 40, 82, 20);
+    button5.frame = CGRectMake(150, 40, 100, 60);
+    [self.view addSubview:button5];
+    
 ```
-* Add created button to the view.
 * If you don't use `translatesAutoresizingMaskIntoConstraints`, then you should set button constraints.
+
+

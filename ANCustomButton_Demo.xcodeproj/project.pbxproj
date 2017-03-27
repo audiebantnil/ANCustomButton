@@ -13,9 +13,7 @@
 		B383819B1D5D4A6700605B12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38381991D5D4A6700605B12 /* Main.storyboard */; };
 		B383819D1D5D4A6700605B12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B383819C1D5D4A6700605B12 /* Assets.xcassets */; };
 		B38381A01D5D4A6700605B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B383819E1D5D4A6700605B12 /* LaunchScreen.storyboard */; };
-		B38381AA1D5D4B4D00605B12 /* ANCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B38381A91D5D4B4D00605B12 /* ANCustomButton.m */; };
-		B38381AD1D5D4BA000605B12 /* UIView+ANFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B38381AC1D5D4BA000605B12 /* UIView+ANFrame.m */; };
-		B38381FF1D5DB39300605B12 /* ANDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B38381FE1D5DB39300605B12 /* ANDownloadOperation.m */; };
+		B78725161E7AE33000D3DF91 /* UIButton+CustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B78725151E7AE33000D3DF91 /* UIButton+CustomLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +27,8 @@
 		B383819C1D5D4A6700605B12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B383819F1D5D4A6700605B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B38381A11D5D4A6700605B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B38381A81D5D4B4D00605B12 /* ANCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANCustomButton.h; sourceTree = "<group>"; };
-		B38381A91D5D4B4D00605B12 /* ANCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANCustomButton.m; sourceTree = "<group>"; };
-		B38381AB1D5D4BA000605B12 /* UIView+ANFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ANFrame.h"; sourceTree = "<group>"; };
-		B38381AC1D5D4BA000605B12 /* UIView+ANFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ANFrame.m"; sourceTree = "<group>"; };
-		B38381FD1D5DB39300605B12 /* ANDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDownloadOperation.h; sourceTree = "<group>"; };
-		B38381FE1D5DB39300605B12 /* ANDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDownloadOperation.m; sourceTree = "<group>"; };
+		B78725141E7AE33000D3DF91 /* UIButton+CustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CustomLayout.h"; sourceTree = "<group>"; };
+		B78725151E7AE33000D3DF91 /* UIButton+CustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CustomLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +86,8 @@
 		B38381A71D5D4A8000605B12 /* ANCustomButton */ = {
 			isa = PBXGroup;
 			children = (
-				B38381AB1D5D4BA000605B12 /* UIView+ANFrame.h */,
-				B38381AC1D5D4BA000605B12 /* UIView+ANFrame.m */,
-				B38381A81D5D4B4D00605B12 /* ANCustomButton.h */,
-				B38381A91D5D4B4D00605B12 /* ANCustomButton.m */,
-				B38381FD1D5DB39300605B12 /* ANDownloadOperation.h */,
-				B38381FE1D5DB39300605B12 /* ANDownloadOperation.m */,
+				B78725141E7AE33000D3DF91 /* UIButton+CustomLayout.h */,
+				B78725151E7AE33000D3DF91 /* UIButton+CustomLayout.m */,
 			);
 			path = ANCustomButton;
 			sourceTree = "<group>";
@@ -128,7 +118,7 @@
 		B38381851D5D4A6700605B12 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = AudiebantNil;
 				TargetAttributes = {
 					B383818C1D5D4A6700605B12 = {
@@ -173,11 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B38381981D5D4A6700605B12 /* ViewController.m in Sources */,
-				B38381FF1D5DB39300605B12 /* ANDownloadOperation.m in Sources */,
-				B38381AA1D5D4B4D00605B12 /* ANCustomButton.m in Sources */,
 				B38381951D5D4A6700605B12 /* AppDelegate.m in Sources */,
 				B38381921D5D4A6700605B12 /* main.m in Sources */,
-				B38381AD1D5D4BA000605B12 /* UIView+ANFrame.m in Sources */,
+				B78725161E7AE33000D3DF91 /* UIButton+CustomLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,8 +205,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -240,7 +230,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,8 +251,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -278,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -330,6 +322,7 @@
 				B38381A61D5D4A6700605B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
